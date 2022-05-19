@@ -1,0 +1,350 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        outline: none;
+        font-family: inherit;
+    }
+    
+     :root {
+        --yellow: #f3c623;
+        --light-gray: #ffffffcc;
+        --dark-gray: #ffffff33;
+        --black: #0000;
+        --white: #fff;
+    }
+    
+     :root {
+        --yellow: #f3c623;
+        --bg-white: #fff;
+        --text-block: #000;
+        --text-orange: #ffb606;
+        --text-gray: #666666;
+        --light-gray: #ffffffcc;
+        --dark-gray: #ffffff33;
+    }
+    
+    html {
+        font-size: 10px;
+    }
+    
+    body {
+        font-family: "Poppins", Arial, sans-serif;
+        background: var(--text-block);
+    }
+    
+    header {
+        position: relative;
+        position: fixed;
+        width: 25%;
+        padding: 2rem;
+        color: var(--light-gray);
+    }
+    
+    header ::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 32rem;
+        width: 10px;
+        height: 100vh;
+        background: url(../images/aside.png);
+        background-repeat: no-repeat;
+    }
+    
+    header nav {
+        margin-bottom: 6rem;
+    }
+    
+    header nav h1 {
+        background-image: url(../images/xbg_1.jpg);
+        background-repeat: repeat;
+        background-size: contain;
+        /* -webkit-background-clip: text; */
+        -webkit-text-fill-color: transparent;
+        font-size: 5.5rem;
+        font-weight: 700;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    header nav ul li {
+        margin-block: 1rem
+    }
+    
+    header nav ul li a {
+        color: var(--light-gray);
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    
+    header nav ul li a:hover {
+        color: var(--yellow);
+        transition: color 0.03s;
+    }
+    
+    .description_form {
+        margin-block: 2rem;
+    }
+    
+    .description_form span {
+        font-size: 1.8rem;
+        color: var(--light-gray);
+        font-weight: 300;
+    }
+    
+    .description_form form input {
+        background: transparent;
+        border: 1px solid var(--light-gray);
+        font-size: 1.8rem;
+        padding: .8rem;
+        margin-block: 1.5rem;
+    }
+    
+    .description_form form input::placeholder {
+        font-size: 1.7rem;
+        font-weight: 200;
+        color: var(--white);
+    }
+    
+    .description_form p {
+        color: var(--dark-gray);
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-block: 2rem;
+        width: 250px
+    }
+    
+    main,
+    footer {
+        margin-left: 33rem;
+    }
+    
+    .black_Gold_Paint_face,
+    .green_leaves,
+    .coal,
+    .top_leaf {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--light-gray);
+        background: #161616;
+    }
+    
+    .image_black_paint {
+        max-width: 500px;
+        width: 100%;
+        background: url(../images/xwork-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+    }
+    
+    .text_black_gold,
+    .text_green_leaves,
+    .text_top_leaf {
+        max-width: 400px;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .text_black_gold span,
+    .text_green_leaves span,
+    .text_top_leaf span {
+        color: var(--dark-gray);
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+    
+    .text_black_gold h2,
+    .text_green_leaves h2,
+    .text_top_leaf h2 {
+        font-size: 4.5rem;
+        font-weight: 600;
+        margin-block: 1.5rem;
+        font-family: serif;
+        width: 100%;
+        color: var(--bg-white);
+    }
+    
+    .text_black_gold p,
+    .text_green_leaves p,
+    .text_top_leaf p {
+        color: var(--dark-gray);
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+    
+    .text_black_gold a,
+    .text_green_leaves a,
+    .text_top_leaf a {
+        border: 1px solid var(--yellow);
+        color: var(--yellow);
+        margin-block: 2rem 1rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding: .5rem;
+    }
+    /* .text_green_leaves,
+.text_top_leaf {
+    margin-left: 3rem;
+    max-height: 550;
+} */
+    
+    .image_green_leaves {
+        max-width: 500px;
+        width: 100%;
+        background: url(../images/work-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+    }
+    
+    .image_coal {
+        max-width: 520px;
+        width: 100%;
+        background: url(../images/work-3.jpg.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+    }
+    
+    .image_top_leaf {
+        max-width: 500px;
+        width: 100%;
+        background: url(../images/work-4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+    }
+    
+    .image_builing {
+        max-width: 500px;
+        width: 100%;
+        background: url(../images/work-5.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+    }
+    
+    .image_black_girl_model {
+        max-width: 500px;
+        width: 100%;
+        background: url(../images/work-6.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+    }
+    
+    .image_pug_puppy {
+        max-width: 500px;
+        width: 100%;
+        background: url(../images/work-7.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+    }
+    
+    .image_White_fower {
+        max-width: 500px;
+        width: 100%;
+        background: url(../images/work-8.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+    }
+    
+    .image_turtle {
+        max-width: 500px;
+        width: 100%;
+        background: url(../images/work-9.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+    }
+    
+    footer {
+        background: var(--yellow);
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    footer a {
+        color: var(--text-block);
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    @media(max-width:1024px) {
+        /* header {
+            display: none;
+        } */
+        header ::before {
+            display: none;
+        }
+    }
+    
+    @media(max-width:991px) {
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 48px;
+        }
+        header .navigation {
+            display: none;
+        }
+        header .navigation li a {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .main {
+            margin-left: 10rem
+        }
+        .toggleMenu {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background: url('../images/toggleMenu.jpg');
+            background-position: center;
+            background-size: 30px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            z-index: 11;
+        }
+        .toggleMenu.active {
+            background: url('../images/close.jpg');
+            background-position: center;
+            background-size: 24px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            z-index: 11;
+        }
+        .navigation.active,
+        .description_form.active {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
